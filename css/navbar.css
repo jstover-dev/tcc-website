@@ -1,0 +1,96 @@
+header {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 2px solid red;
+    padding: 10px 10px 5px 10px;
+}
+
+
+.header-logo {
+    height: 75px;
+}
+.header-links {
+    margin: 0 20px;
+    padding: 0;
+}
+.header-link {
+    padding: 0 15px;
+    line-height: 75px;
+    display: inline-block;
+}
+.header-link:hover > a {
+    text-decoration: underline;
+}
+.header-link > a:visited,
+.header-link > a,
+.header-link > label {
+    /* Style header links */
+    text-decoration: none;
+    color: #2f2f2f;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.header-toggle {
+    display: none;
+    background-color: aliceblue;
+}
+
+/* Mobile screen styling */
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        padding: 10px 0 0 0;
+    }
+    .header-links {
+        margin: 0;
+    }
+    .header-link {
+        display: block;
+        line-height: 35px;
+        text-align: center;
+        padding: 0;
+    }
+    .header-link:nth-child(n+2) {
+        border-bottom: 1px solid gray;
+    }
+    .logo-container {
+        display: flex;
+        justify-content: center;
+    }
+    .header-logo {
+        width: auto;
+    }
+
+    /* Hide menu items except the toggle when hidden checkbox is checked */
+    #header-toggle-btn:checked ~ .header-link:not(.header-toggle) {
+        display: none;
+    }
+    #header-toggle-btn:checked ~ .header-toggle {
+        border-top: none;
+    }
+    .header-toggle {
+        display: flex;
+        justify-content: center;
+    }
+    .header-toggle > label {
+        cursor: pointer;
+        width: 100%;
+        text-align: center;
+    }
+
+    #header-toggle-btn:checked ~ .header-toggle .header-toggle-icon-active {
+        display: none;
+    }
+    #header-toggle-btn:not(:checked) ~ .header-toggle .header-toggle-icon-inactive {
+        display: none;
+    }
+}
+
+/* Hide the menu toggle checkbox (only used for mobile navmenu) */
+#header-toggle-btn {
+    display: none;
+}

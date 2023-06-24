@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }} - {{ page.title }}</title>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/combine/npm/purecss@3.0.0/build/base-min.css,npm/purecss@3.0.0/build/grids-min.css,npm/purecss@3.0.0/build/grids-responsive-min.css,npm/purecss@3.0.0/build/forms-min.css"
+        integrity="sha256-ra9+OEgHl3lSXhtIM5yRd5tEfE35ilRKIQ8T0giHKHE="
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Viglino/iconicss@master/dist/iconicss.min.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="./"><img class="header-logo" src="/img/TCC-logo2-sm.png"  alt="Total Computer Care Logo"/></a>
+        </div>
+        <div class="spacer"></div>
+        <nav>
+            <ul class="header-links">
+                <input type=checkbox id="header-toggle-btn" checked>
+                <li class="header-link"><a href="/products">Products</a></li>
+                <li class="header-link"><a href="/services">Services</a></li>
+                <li class="header-link"><a href="/contact">Contact Us</a></li>
+                <li class="header-toggle">
+                    <label for="header-toggle-btn">
+                        <span class="header-toggle-icon-inactive">☰</span>
+                        <span class="header-toggle-icon-active">⇑</span>
+                    </label>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        {{ content }}
+    </div>
+
+    <footer>
+        <p>© 2008-{{ site.time | date: '%Y' }} {{ site.company_name }}</p>
+        <p>Last modified: {{ site.time | date_to_string }}</p>
+        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms and Conditions</a>
+    </footer>
+</body>
+</html>

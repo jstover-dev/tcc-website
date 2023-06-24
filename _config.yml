@@ -1,0 +1,126 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Total Computer Care
+email: josh@totalcomputercare.com.au
+description: >-
+  Delivering network solutions for over 20 years.
+  Total Computer Care has successfully provided IT technical support services to small and medium sized businesses in Cairns since 1998.
+  Our range of products and services allow us to truly be an 'end-to-end' solution provider to small, medium and corporate enterprises.
+domain: "totalcomputercare.github.io"
+url: "https://totalcomputercare.github.io"
+baseurl: ""
+
+company_name: Total Computer Care
+
+company_location: Cairns
+
+company_founded: 1998
+
+contact_email: mark@totalcomputercare.com.au
+
+contact_phone: "+61407161960"
+
+addresses:
+  - name: Postal Address
+    details:
+      - Total Computer Care
+      - P.O. Box 440
+      - Smithfield, QLD 4878
+
+  - name: Office Address
+    details:
+      - Total Computer Care
+      - 8 Katanga Close
+      - Smithfield, QLD 4878
+
+partners:
+  - name: TeamViewer
+    img: /img/partners/TeamViewer.svg
+    url: https://get.teamviewer.com/tccremote
+
+  - name: Lenovo
+    img: /img/partners/IBM.svg
+    url: https://www.lenovo.com/au/en
+
+  - name: Trend Micro
+    img: /img/partners/TrendMicro.svg
+    url: https://www.trendmicro.com.au
+
+  - name: Intel
+    img: /img/partners/Intel.svg
+    url: https://www.ibm.com/au
+
+
+products:
+  - type: Hardware
+    items:
+      - Laptops
+      - Desktops
+      - Servers
+      - Handhelds
+      - Hard Disks
+      - Mice
+      - Keyboards
+      - Monitors
+      - Wireless
+      - Switches
+      - Routers
+      - Modems
+      - Printers/Scanners
+      - Multi-function Devices
+      - Backup Systems
+      - CD/DVD/Bluray Hardware
+      - Cables
+      - Uninterruptible Power
+  - type: Software
+    items:
+      - Trend Micro Security Software
+      - Microsoft Windows
+      - Microsoft Office
+      - Watchguard
+
+defaults:
+  - scope:
+      path: img
+    values:
+      image: true
+
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+
+include:
+  - _pages
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

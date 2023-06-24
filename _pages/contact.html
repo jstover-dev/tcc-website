@@ -1,0 +1,45 @@
+---
+layout: default
+title: Contact Us
+permalink: /contact
+---
+
+<section>
+
+    <div class="page-title">
+        <h1>{{ page.title }}</h1>
+    </div>
+
+    <article>
+        <div class="contact-links pure-g">
+            <div class="contact-item pure-u-1 pure-u-sm-1-2">
+                <h2>Phone</h2>
+                <a href="tel:{{ site.contact_phone }}"><div><i class="icss-phone x4"></i></div></a>
+                <a href="tel:{{ site.contact_phone }}">{{ site.contact_phone }}</a>
+            </div>
+            <div class="contact-item pure-u-1 pure-u-sm-1-2">
+                <h2>Email</h2>
+                <a href="mailto:{{ site.contact_email }}"><i class="icss-send-mail x4"></i></a>
+                <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
+            </div>
+        </div>
+    </article>
+
+    <article>
+        <div class="contact-links pure-g">
+            {% for address in site.addresses %}
+            <div class="contact-item pure-u-1 pure-u-sm-1-2">
+                <h2>{{ address.name }}</h2>
+                <p>{{ address.details | join: '<br>' }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </article>
+
+    <div class="google-map-container">
+        <img src="/img/map-static.png" height="450">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3818.8085719577434!2d145.6865292!3d-16.8358501!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x69786feb08cc32cb%3A0x84becaa42e6ce58f!2s8%20Katanga%20Cl%2C%20Smithfield%20QLD%204878!5e0!3m2!1sen!2sau!4v1595395599629!5m2!1sen!2sau"
+                width="600" height="450" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    </article>
+</section>
