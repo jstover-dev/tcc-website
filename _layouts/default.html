@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ site.title }} - {{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/combine/npm/purecss@3.0.0/build/base-min.css,npm/purecss@3.0.0/build/grids-min.css,npm/purecss@3.0.0/build/grids-responsive-min.css,npm/purecss@3.0.0/build/forms-min.css"
@@ -43,7 +44,7 @@
     <footer>
         <p>© 2008-{{ site.time | date: '%Y' }} {{ site.company_name }}</p>
         <p>Last modified: {{ site.time | date_to_string }}</p>
-        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms and Conditions</a>
+        <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms and Conditions</a>
     </footer>
 </body>
 </html>
