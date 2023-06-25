@@ -11,45 +11,38 @@ permalink: /
     <p class="subtitle">
         Delivering network solutions for over {{ company_lifetime }} years.
     </p>
-    <article>
+    <p class="justify-text">
         {{ site.company_name }} has successfully provided IT technical support services to small and medium sized businesses in {{ site.company_location}} since {{ site.company_founded }}.
         Our range of products and services allow us to truly be an 'end-to-end' solution provider to small, medium and corporate enterprises.
-    </article>
+    </p>
 </section>
 
-<section>
-
-    <div class="page-title">
+<section class="section-border">
+    <div class="title">
         <h2>Contact</h2>
     </div>
-    <article>
-        <div class="contact-links pure-g">
-            <div class="contact-item pure-u-1 pure-u-md-1-2">
-                <a href="tel:{{ site.contact_phone }}"><div><i class="icss-phone x4"></i></div></a>
-                <a href="tel:{{ site.contact_phone }}">{{ site.contact_phone }}</a>
-            </div>
-            <div class="contact-item pure-u-1 pure-u-md-1-2">
-                <a href="mailto:{{ site.contact_email }}"><i class="icss-send-mail x4"></i></a>
-                <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
-            </div>
+    <div class="contact-links pure-g">
+        <div class="contact-item pure-u-1 pure-u-sm-1-2">
+            <a href="tel:{{ site.contact_phone }}"><div><i class="icss-phone x4"></i></div></a>
+            <a href="tel:{{ site.contact_phone }}">{{ site.contact_phone }}</a>
         </div>
-    </article>
+        <div class="contact-item pure-u-1 pure-u-sm-1-2">
+            <a href="mailto:{{ site.contact_email }}"><i class="icss-send-mail x4"></i></a>
+            <a href="mailto:{{ site.contact_email }}">{{ site.contact_email }}</a>
+        </div>
+    </div>
 </section>
 
-<hr>
-
 <!-- Partners -->
-<section>
-    <div class="page-title">
-        <h2 class="title">Partners</h2>
+<section class="section-border">
+    <div class="title">
+        <h2>Partners</h2>
     </div>
-    <article>
-        <div class="pure-g">
-            {% for partner in site.partners %}
-            <div class="partner-link pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
-                <a href="{{ partner.url }}"><img src="{{ partner.img }} " alt="{{ partner.name }} Logo"></a>
-            </div>
-            {% endfor %}
+    <div class="pure-g">
+        {% for partner in site.partners %}
+        <div class="partner-link pure-u-1 pure-u-md-1-2 pure-u-lg-1-4">
+            <a href="{{ partner.url }}"><img src="{{ partner.img }} " alt="{{ partner.name }} Logo"></a>
         </div>
-    </article>
+        {% endfor %}
+    </div>
 </section>

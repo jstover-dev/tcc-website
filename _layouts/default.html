@@ -1,16 +1,24 @@
+---
+layout: compress
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{{ site.title }} - {{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/combine/npm/purecss@3.0.0/build/base-min.css,npm/purecss@3.0.0/build/grids-min.css,npm/purecss@3.0.0/build/grids-responsive-min.css,npm/purecss@3.0.0/build/forms-min.css"
-        integrity="sha256-ra9+OEgHl3lSXhtIM5yRd5tEfE35ilRKIQ8T0giHKHE="
-        crossorigin="anonymous"
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/combine/npm/purecss@3.0.0/build/base-min.css,npm/purecss@3.0.0/build/grids-min.css,npm/purecss@3.0.0/build/grids-responsive-min.css,npm/purecss@3.0.0/build/forms-min.css"
+          integrity="sha256-ra9+OEgHl3lSXhtIM5yRd5tEfE35ilRKIQ8T0giHKHE="
+          crossorigin="anonymous"
     >
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Viglino/iconicss@master/dist/iconicss.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/Viglino/iconicss@0.3.0/dist/iconicss.min.css"
+          integrity="sha256-0lFOD+QzsntkWHLwa5Bq6y1NyPPu64KYxeQy0mbZGtI="
+          crossorigin="anonymous"
+    >
+
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/site.css">
 </head>
@@ -24,6 +32,7 @@
         <nav>
             <ul class="header-links">
                 <input type=checkbox id="header-toggle-btn" checked>
+                <li class="header-link"><a href="/">Home</a></li>
                 <li class="header-link"><a href="/products">Products</a></li>
                 <li class="header-link"><a href="/services">Services</a></li>
                 <li class="header-link"><a href="/contact">Contact Us</a></li>

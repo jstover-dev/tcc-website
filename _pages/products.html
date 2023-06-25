@@ -5,22 +5,21 @@ permalink: /products
 ---
 
 <section>
-    <div class="page-title">
+    <div class="title">
         <h1>{{ page.title }}</h1>
         <p class="subtitle">{{ site.company_name }}'s product list includes all resources required for a complete solution, including:</p>
     </div>
-    <article>
-        <div class="product-list pure-g">
+</section>
 
-            {% for product in site.products %}
-            <div class="pure-u-1 pure-u-sm-1-2">
-                <h2>{{ product.type }}</h2>
-                <ul>
-                {% for item in product.items %}
-                    <li>{{ item }}</li>
-                {% endfor %}
-                </ul>
-            </div>
+<section class="product-list section-border">
+    {% for product in site.products %}
+    <div class="pure-u-1 pure-u-sm-1-2">
+        <h2>{{ product.type }}</h2>
+        <ul>
+            {% for item in product.items %}
+            <li>{{ item }}</li>
             {% endfor %}
-    </article>
+        </ul>
+    </div>
+    {% endfor %}
 </section>
