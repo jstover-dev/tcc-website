@@ -105,6 +105,8 @@ include:
   - _pages
 
 exclude:
+  - CNAME
+  - README.md
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/

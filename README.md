@@ -4,7 +4,7 @@
 ![Deployment Status](https://github.com/totalcomputercare/website/actions/workflows/jekyll.yml/badge.svg)
 
 
-[![TCC Logo](img/TCC-logo.png)](https://www.totalcomputercare.com.au/)
+[![TCC Logo](img/TCC-logo-full.png)](https://www.totalcomputercare.com.au/)
 
 
 ## Development
