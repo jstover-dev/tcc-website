@@ -28,8 +28,8 @@ layout: compress
 
 <body>
     <header>
-        <div class="logo-container">
-            <a href="./"><img class="header-logo" src="/img/TCC-logo2-sm.png"  alt="Total Computer Care Logo"/></a>
+        <div>
+            <a href="/"><img src="/img/TCC-logo-full.png"  height="75px" alt="{{ site.company_name }} Logo"/></a>
         </div>
         <div class="spacer"></div>
         <nav>
@@ -54,7 +54,7 @@ layout: compress
     </div>
 
     <footer>
-        <p>© 2008-{{ site.time | date: '%Y' }} {{ site.company_name }}</p>
+        <p>© {{ site.company_founded }} - {{ site.time | date: '%Y' }} {{ site.company_name }}</p>
         <p>Last modified: {{ site.time | date_to_string }}</p>
         <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms and Conditions</a>
     </footer>
