@@ -1,0 +1,19 @@
+.google-map-container {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+
+  & > img {
+    max-width: 568px;
+    @media screen and (max-width: 568px) {
+      max-width: 100%;
+    }
+  }
+
+  & > iframe {
+    position: absolute;
+    max-width: 600px;
+    border: 0;
+  }
+}

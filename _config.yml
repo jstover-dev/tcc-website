@@ -95,8 +95,10 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-minifier
+  - jekyll-sass-converter
 
 sass:
+    sass_dir: _scss
     style: compressed
 
 include:
